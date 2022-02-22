@@ -14,4 +14,14 @@ defineNewObject = async () => {
     await yield.save
 }
 
+getFirstYield = async () => {
+    const query = new Moralis.Query("yield")
+    const firstYield = query.first();
+    return firstYield;
+}
+
+editYieldPer = async () => {
+    const yieldChange = getFirstYield()
+    yieldChange
+}
 init();
