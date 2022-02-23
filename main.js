@@ -1,8 +1,8 @@
-Moralis.initialize("ptrJVYPZORMt9JaWSlQdYCj8bxeW1IuH4Zn1vZjQ");
-Moralis.serverURL = "https://drilfrxmejyp.usemoralis.com:2053/server";
+Moralis.initialize("ulXYUwPWC828l1VTSGzybhUNYsQQAnF4BAGeRjsD");
+Moralis.serverURL = "https://wjlh8hq6n7px.usemoralis.com:2053/server";
 
-init = async () => {
-    window.web3 = await Moralis.Web3.enable();
+init = async () => { 
+    window.ethers = await Moralis.ethers.enable();
     const user = await Moralis.User.current;
 }
 
