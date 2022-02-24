@@ -2,8 +2,9 @@ Moralis.initialize("ulXYUwPWC828l1VTSGzybhUNYsQQAnF4BAGeRjsD");
 Moralis.serverURL = "https://wjlh8hq6n7px.usemoralis.com:2053/server";
 
 init = async () => { 
-    window.ethers = await Moralis.ethers.enable();
+    window.Web3 = await Moralis.Web3.enable();
     const user = await Moralis.User.current;
+    
 }
 
 defineNewObject = async () => {
@@ -11,7 +12,7 @@ defineNewObject = async () => {
     const yield = new yieldPercent();
     yield.set('percent', 5);
 
-    await yield.save
+    await yield.save();
 }
 
 getFirstYield = async () => {
@@ -22,6 +23,6 @@ getFirstYield = async () => {
 
 editYieldPer = async () => {
     const yieldChange = getFirstYield()
-    yieldChange
+    yieldChange;
 }
 init();
